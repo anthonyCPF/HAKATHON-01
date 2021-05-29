@@ -11,22 +11,22 @@ console.log(admin);
 // ejer 02
 /*
 let planet = "Tierra"
-let name = prompt("what's your name?")
-alert ("hello " + name)
+let webvisitnam = "John"
 */
 
 //ejer 03
 /*
 const birthday = '18.04.1982'
-const age = new Date - birthday
+const age = someCode(birthday)
 console.log(age);
 */
 
 //ejer 04 listo
 /*
-let name1 = "llya"
-//console.log("hello " + name1);
-alert(`hello ${name1}`);
+let name = "llya"
+alert(`hello ${1}`); // => hello 1
+alert(`hello ${"name"}`); // => hello name 
+alert(`hello ${name}`); // => hello llya
 */
 
 //ejer 05 listo
@@ -68,10 +68,13 @@ let menu = {
 }
 
 menu.multy = function multyplyNum(menu) {
-    return menu * 2;
+    return `${this.width}` * 2,
+    `${this.beight}` * 2;
 }
 
-
+for (let key in menu) {
+    console.log(menu[key] * 2);
+}
 console.log(menu.multy())
 
 
