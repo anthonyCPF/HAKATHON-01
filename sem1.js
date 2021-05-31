@@ -8,7 +8,7 @@ admin = name
 console.log(admin);
 */
 
-// ejer 02
+// ejer 02 listo
 /*
 let planet = "Tierra"
 let webvisitnam = "John"
@@ -39,12 +39,18 @@ delete user.name
 console.log(user);
 */
 
-//ejer 06
+//ejer 06 listo
 /*
-const example = {};
+let example = {};
+
+function isEmpty(obj) {
+    return Object.keys(obj).length === 0;
+}
 console.log(isEmpty(example));
 
+example["8.30"] = "get up";
 console.log(isEmpty(example));
+console.log(example);
 */
 
 //ejer 07 listo
@@ -60,21 +66,12 @@ console.log(suma);
 */
 
 //ejer 08
-
+/*
 let menu = {
     width: 200,
     beight: 300,
     title: "My menu"
 }
-
-menu.multy = function multyplyNum(menu) {
-    return `${this.width}` * 2,
-    `${this.beight}` * 2;
-}
-
-for (let key in menu) {
-    console.log(menu[key] * 2);
-}
-console.log(menu.multy())
+*/
 
 
